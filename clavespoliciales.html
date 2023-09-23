@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Palabras Aleatorias</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+ 
+
+  <div class="container mt-5">
+    <h1 class="mb-4">◘ CLAVES POLICIALES</h1>
+    <p id="wordDisplay"></p>
+    <button class="btn btn-primary" onclick="generateRandomWord()">Generar Clave</button>
+  </div>
+
+  <script>
+    const words = [
+      '1- SILENCIO EN LA RED',
+      '2- CAMBIO DE CANAL',
+      '3- COMUNICACIÓN URGENTE',
+      '4- PRUEBA DE TRASMISIÓN RADIAL',
+      '5- AUTORIZACION PARA USO DE EQ. DE EMERGENCIA',
+      '6- UNIDAD Y DISTRITO O ZONA PATRULLANDO O APOSTADO',
+      '7- UNIDAD OCUPADA Y/O EN COMISION A...',
+      '8- UNIDAD PARA SERVICIO DE AMBULANCIA',
+      '9- TRASLADO DE PLASMA O MEDICAMENTOS',
+      '10- NO SE USA',
+      '11- SE CURSA INFORMACIÓN SOBRE UN HECHO',
+      '12- PEDIDO DE POLICIA SIN ESPECIFICAR CAUSA',
+      '13- SOL. DE UBICACION Y/O TIEMPO DE FINALIZACION',
+      '14- REGISTRO DE PERSONAS (INDICAR LUGAR)',
+      '15- EFECTUAR ENLACE TELEFONICO',
+      '16- CORTE EL TRANSITO EN...',
+      '17- HABILITAR EL TRANSITO',
+      '18- NO CIERCULAR POR (CALLE, INDICAR LUGAR)',
+      '19- CIERRE DEPARTAMENTAL',
+      '20- CIERRE URBANO',
+      '21- EMPLAZAMIENTO DE UNIDAD EN PUESTOS CLAVES',
+      '22- EVITAR PASAJE DE PERSONAS Y/O VEHICULOS IDENTIFICADO',
+      '23- OBSTRUCCION DEL INTINERARIO POR MEDIO DE...',
+      '24- RAPINA',
+      '25- ASALTO A MANO ARMADA',
+      '26- COPAMIENTO',
+      '27- HURTO',
+      '28- ARREBATO',
+      '29- PERSONAS EXTRAÑAS',
+      '30- HURTO DE VEHICULO',
+      '31- REGISTRO DE VEHÍCULO',
+      '32- PERSECUCION DE VEHICULO',
+      '33- VEHICULO ABANDONADO',
+      '34- SE CURSA INFORMACIÓN SOBRE VEHICULO',
+      '35- DAÑOS',
+      '36- CHOQUE SIMPLE',
+      '37- ACCIDENTE DE TRANSITO',
+      '38- ACCIDENTE FATAL',
+      '39- POLICIA EN PELIGRO',
+      '40- POLICIA AGREDIDO A TRAVES DE...',
+      '41- DISPAROS A UNIDAD POLICIAL',
+      '42- PEDREA A UNIDAD PLICIAL',
+      '43- VEHICULO POLICIAL CON DESPERFECTOS',
+      '44- INCENDIO',
+      '45- PEDIDO DE BOMBEROS PARA RESCATE',
+      '46- BARRIDO',
+      '47- DISPARO DE ARMA DE FUEGO',
+      '48- DESACATO',
+      '49- PERSONA CAIDA',
+      '50- PERSONA FALLECIDA',
+      '51- SUICIDIO',
+      '52- HOMICIDIO',
+      '53- INTENTO DE AUTOELIMINACION',
+      '54- HERIDA DE ARMA DE FUEGO',
+      '55- HERIDO DE ARMA BLANCA',
+      '56- LESIONES POR...',
+      '57- AMENAZAS CON....',
+      '58- VIOLACION',
+      '59- SECUESTRO',
+      '60- RAPTO',
+      '61- RINA',
+      '62- PROBLEMA FAMILAIR',
+      '63- PERSONA EXTRAVIADA',
+      '64- MENOR EXTRAVIADO O ABANDONADO',
+      '65- DEMENTE',
+      '66- PROSTITUCION',
+      '67- ATENTADO A LA MORAL EN VIA PUBLICA',
+      '68- DROGADICCION',
+      '69- PERSONA EBRIA',
+      '70- PROCEDER A DET. Y COND. DE PERSONAS',
+      '71- SOBORNO',
+      '72- CONTRABANDO',
+      '73- ABIGEATO',
+      '74- FAENA CLANDESTINA',
+      '75- JUEGO DE AZAR',
+      '76- ALLANAMIENTO',
+      '77- SIN NOVEDAD',
+      '78- RELEVO',
+      '79- ATENTADO A: MEDIANTE ...',
+      '80- FRANCO TIRADORES',
+      '81- REUNION DE TODOS LOS EFECTIVOS EN..',
+      '82- PERSONA ARMADA',
+      '83- RATONERA EN... PERTENECIENTE A',
+      '84- SISTEMA DE ALARMA....',
+      '85- EVASION',
+      '86- VIGILANCIA AEREA',
+      '87- MANIFESTACION RELAMPAGO',
+      '88- INFORMACION SOBRE MANIFESTACION',
+      '89- DERRUMBE',
+      '90- INUNDACION',
+      '91- ACCIDENTE FERROVIARIO',
+      '92- TRABAJO',
+      '93- EMANACIONES DE GAS',
+      '94- ARTEFACTO EXPLOSIVO',
+      '95- CUSTODIA DE PERSONAS O VALORES',
+      '96- ASUNTO ADMINISTRATIVO',
+      '97- FELICITACIONES',
+      '98- PASAR AL W.C.',
+      '99- DESORDEN INDICAR CALIDAD DEL MISMO',
+      '100- NO SE USA',
+      '101- APOYO A UU EN CLAVE',
+      '102- PONER EN EJECUCION PLAN...',
+      '103- FINALIZA OPERACION DISPUESTA'
+    ];
+
+    function generateRandomWord() {
+      const randomIndex = Math.floor(Math.random() * words.length);
+      const randomWord = words[randomIndex];
+      document.getElementById('wordDisplay').innerText = `CLAVE: ${randomWord}`;
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
